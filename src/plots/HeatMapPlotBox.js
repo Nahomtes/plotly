@@ -1,12 +1,11 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
-import HeatMapData from './heatMapData.json'
 
 
 function HeatmapPlotBox() {
   // Create random data for the heatmap
   const z = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 100; i++) {
     z.push([]);
     for (let j = 0; j < 10; j++) {
       z[i].push(Math.random());
@@ -46,7 +45,7 @@ function HeatmapPlotBox() {
 
   // Create the layout
   const layout = {
-    title: 'Heatmap and Plot Box',
+    title: 'Heatmap Box',
     grid: {rows: 1, columns: 2},
     xaxis: {domain: [0, 0.45], anchor: 'y'},
     xaxis2: {domain: [0.55, 1], anchor: 'y'},
@@ -54,7 +53,7 @@ function HeatmapPlotBox() {
   };
 
   // Create the data array
-  const data = [plotBoxTrace2, heatmapTrace, plotBoxTrace, plotBoxTrace2];
+  const data = [heatmapTrace];
 
   return (
     <Plot

@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-export function CircosPlot() {
+export default function CircosPlot() {
   const data = [
     {
       type: 'scatterpolar',

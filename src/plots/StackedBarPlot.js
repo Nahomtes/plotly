@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-export function StackedBarPlot() {
+export default function StackedBarPlot() {
   // Define the data for the stacked bar plot
   const data = [
     {

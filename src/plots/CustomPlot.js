@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-export function CustomPlot() {
+export default function CustomPlot() {
   // Define the data for the custom plot
   const data = [
     {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-export function CountTiles() {
+export default function CountTiles() {
   // Define the data for the count tiles
   const data = [
     {
